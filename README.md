@@ -120,9 +120,9 @@ src/main/resources/  application*.properties, schema.sql, data.sql
 
 | Integrante | Rol |
 |------------|-----|
-| _Nombre 1_ | _Planificación_ |
-| _Nombre 2_ | _Documentación_ |
-| _Nombre 3_ | _Integración del código_ |
+| Enea| _Planificación_ |
+| Miguel | _Documentación_ |
+| Sergio | _Integración del código_ |
 
 - Cada tarea es una **Issue** y se planifica en **Projects**; la documentación funcional está en la **wiki**.
 - Una rama por tarea (`feat/...`, `docs/...`) y *Pull Request* revisado por otra persona antes de fusionar a `main`.
