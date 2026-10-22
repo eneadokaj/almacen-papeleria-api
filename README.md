@@ -92,10 +92,22 @@ Al arrancar se crean la tabla y los datos de ejemplo (`schema.sql` y `data.sql`)
 
 ### Pruebas automáticas
 
+Las pruebas se pueden ejecutar con H2, una base de datos en memoria, sin necesidad de iniciar PostgreSQL.
+
+**Linux, macOS o Git Bash**
+
 ```bash
-SPRING_PROFILES_ACTIVE=h2 ./mvnw verify          # Linux / macOS / Git Bash
-$env:SPRING_PROFILES_ACTIVE="h2"; .\mvnw verify  # Windows PowerShell
+SPRING_PROFILES_ACTIVE=h2 ./mvnw verify
 ```
+
+**Windows PowerShell**
+
+```powershell
+$env:SPRING_PROFILES_ACTIVE="h2"
+.\mvnw.cmd verify
+```
+
+Si las pruebas terminan correctamente, Maven mostrará `BUILD SUCCESS`.
 
 ## Documentación del código (Javadoc)
 
