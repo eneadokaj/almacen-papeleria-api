@@ -132,3 +132,34 @@ src/main/resources/  application*.properties, schema.sql, data.sql
 ## Uso de IA
 
 _Declarar aquí qué se ha consultado a una IA (comandos, errores…). Nunca se introducen contraseñas ni claves._
+
+
+## Flujo de trabajo del equipo
+
+El proyecto se desarrolla en un equipo de tres integrantes (A, B y C).
+
+Utilizamos Git y GitHub para organizar y controlar los cambios del código.
+
+### Ramas utilizadas
+
+- `main`: contiene la versión estable del proyecto.
+- `develop`: integra los cambios realizados por el equipo.
+- `feature/*`: se utiliza para desarrollar cada tarea por separado.
+
+### Proceso de trabajo
+
+1. Crear una issue en GitHub.
+2. Asignar la tarea a un integrante.
+3. Crear una rama feature desde develop.
+4. Realizar los cambios y comprobar que compilan.
+5. Hacer commit indicando el número de la issue.
+6. Subir la rama a GitHub.
+7. Crear una Pull Request hacia develop.
+8. Solicitar la revisión de otro compañero.
+9. Aprobar y fusionar la Pull Request.
+
+## Uso de inteligencia artificial
+
+Durante el desarrollo del proyecto se ha utilizado ChatGPT como herramienta de apoyo para comprender Git, GitHub, Maven y la documentación del proyecto.
+
+El código y los cambios se revisan y comprueban antes de incorporarlos al repositorio.
