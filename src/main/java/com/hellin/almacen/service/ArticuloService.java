@@ -23,9 +23,22 @@ public class ArticuloService {
         throw new UnsupportedOperationException("Pendiente de implementar");
     }
 
+    /**
+     * Busca un artículo por su identificador y devuelve sus datos básicos.
+     *
+     * @param id identificador del artículo que se desea buscar
+     * @return los datos básicos del artículo, o Optional.empty() si no existe
+     */
     public Optional<Map<String, Object>> buscarBasico(Integer id) {
-        // TODO (#n de la incidencia): buscar el artículo por id y devolver un mapa con id, nombre y stock.
-        // Si el stock es 0, añadir "mensaje": "Agotado". Si no existe, Optional.empty().
-        throw new UnsupportedOperationException("Pendiente de implementar");
+        return repositorio.findById(id).map(articulo -> {
+            Map<String, Object> datos = new java.util.LinkedHashMap<>();
+            datos.put("id", articulo.getId());
+            datos.put("nombre", articulo.getNombre());
+            datos.put("stock", articulo.getStock());
+            if (articulo.getStock() == 0) {
+                datos.put("mensaje", "Agotado");
+            }
+            return datos;
+        });
     }
 }
