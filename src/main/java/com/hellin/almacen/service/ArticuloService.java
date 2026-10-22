@@ -18,9 +18,13 @@ public class ArticuloService {
         this.repositorio = repositorio;
     }
 
-    public List<Articulo> listarTodos() {
-        // TODO (#n de la incidencia): devolver todos los artículos. Pista: repositorio.findAll()
-        throw new UnsupportedOperationException("Pendiente de implementar");
+    /**
+ * Devuelve todos los artículos del almacén.
+ *
+ * @return lista de todos los artículos
+ */
+public List<Articulo> listarTodos() {
+        return repositorio.findAll();
     }
 
     /**
