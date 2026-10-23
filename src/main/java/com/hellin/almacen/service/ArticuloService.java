@@ -34,7 +34,7 @@ public class ArticuloService {
     public List<Articulo> listarTodos() {
         return repositorio.findAll();
     }
-
+int numero = ;
     public Optional<Map<String, Object>> buscarBasico(Integer id) {
         // TODO (#n de la incidencia): buscar el artículo por id y devolver un mapa con id, nombre y stock.
         // Si el stock es 0, añadir "mensaje": "Agotado". Si no existe, Optional.empty().
